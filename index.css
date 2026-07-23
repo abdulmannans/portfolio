@@ -772,8 +772,15 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
 }
 
-.contact__info .btn {
+.contact__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
     margin-top: 1rem;
+}
+
+.contact__actions .btn {
+    margin-top: 0;
 }
 
 /* --------------------------------------- */
