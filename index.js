@@ -24,7 +24,9 @@ if (yearEl) {
 }
 
 const backToTopButton = document.querySelector(".back-to-top");
-let isBackToTopRendered = false;
+const siteNav = document.querySelector(".site-nav");
+const navLinks = document.querySelectorAll("[data-nav]");
+const sections = [...document.querySelectorAll("main section[id]")];
 
 const alterStyles = (visible) => {
   if (!backToTopButton) return;
@@ -33,15 +35,33 @@ const alterStyles = (visible) => {
   backToTopButton.style.transform = visible ? "scale(1)" : "scale(0)";
 };
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 700) {
-    isBackToTopRendered = true;
-    alterStyles(isBackToTopRendered);
-  } else {
-    isBackToTopRendered = false;
-    alterStyles(isBackToTopRendered);
+const updateNavState = () => {
+  const scrolled = window.scrollY > 24;
+  if (siteNav) {
+    siteNav.classList.toggle("is-scrolled", scrolled);
   }
-});
+
+  alterStyles(window.scrollY > 700);
+
+  if (!sections.length || !navLinks.length) return;
+
+  const offset = (siteNav?.offsetHeight || 64) + 32;
+  let currentId = sections[0].id;
+
+  for (const section of sections) {
+    if (section.getBoundingClientRect().top - offset <= 0) {
+      currentId = section.id;
+    }
+  }
+
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${currentId}`;
+    link.classList.toggle("is-active", isActive);
+  });
+};
+
+window.addEventListener("scroll", updateNavState, { passive: true });
+updateNavState();
 
 const revealElements = document.querySelectorAll(".reveal");
 
@@ -54,7 +74,7 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       });
     },
-    { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+    { threshold: 0.12, rootMargin: "0px 0px -6% 0px" }
   );
 
   revealElements.forEach((el) => revealObserver.observe(el));

@@ -12,19 +12,21 @@
 </head>
 
 <body>
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__inner row">
+      <a class="site-nav__brand" href="#top">AMS</a>
+      <ul class="site-nav__items">
+        <li><a class="site-nav__link" href="#about" data-nav>About</a></li>
+        <li><a class="site-nav__link" href="#experience" data-nav>Experience</a></li>
+        <li><a class="site-nav__link" href="#skills" data-nav>Skills</a></li>
+        <li><a class="site-nav__link" href="#work" data-nav>Work</a></li>
+        <li><a class="site-nav__link" href="#contact" data-nav>Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <header class="header" role="banner" id="top">
     <div class="header__atmosphere" aria-hidden="true"></div>
-    <nav class="nav row" aria-label="Primary">
-      <a class="nav__brand" href="#top">AMS</a>
-      <ul class="nav__items">
-        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-        <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
-        <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
-        <li class="nav__item"><a class="nav__link" href="#work">Work</a></li>
-        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
     <div class="header__text-box row">
       <div class="header__text">
         <p class="header__eyebrow reveal">Senior Software Engineer</p>
@@ -79,7 +81,7 @@
             <div class="timeline__meta">
               <span class="timeline__role">Senior Software Engineer</span>
               <span class="timeline__company">Lyra WMS</span>
-              <span class="timeline__dates">Mar 2025 — Present · Mumbai / Groningen</span>
+              <span class="timeline__dates">Mar 2025 — Present · Groningen</span>
             </div>
           </li>
           <li class="timeline__item reveal">
@@ -88,11 +90,7 @@
               <span class="timeline__company">Joistic Technologies</span>
               <span class="timeline__dates">Mar 2024 — Feb 2025 · Mumbai</span>
             </div>
-            <p class="timeline__copy">
-              Delivered 18+ MVP projects (8 from scratch), shipped internal
-              products with Filament, integrated LLMs, and cut development
-              cycles by ~30% with the TALL stack and Redis.
-            </p>
+            <p class="timeline__copy">18+ MVPs shipped with Filament, Redis, and LLMs.</p>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__meta">
@@ -100,11 +98,7 @@
               <span class="timeline__company">edge CRM</span>
               <span class="timeline__dates">Dec 2022 — Mar 2024 · Mumbai</span>
             </div>
-            <p class="timeline__copy">
-              Led backend for a multi-tenant US food-delivery platform and
-              civic projects for BMC — including an offline ticketing system,
-              10× faster exports, and 70% fewer production issues.
-            </p>
+            <p class="timeline__copy">Multi-tenant commerce and BMC systems — 70% fewer prod issues.</p>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__meta">
@@ -112,10 +106,7 @@
               <span class="timeline__company">Big Rattle Technologies</span>
               <span class="timeline__dates">Oct 2021 — Dec 2022 · Mumbai</span>
             </div>
-            <p class="timeline__copy">
-              Built insurance workflows, secured PII data, and upgraded a
-              production app from Laravel 5.8 to Laravel 9 for speed and security.
-            </p>
+            <p class="timeline__copy">Insurance platform work and Laravel 5.8 → 9 upgrade.</p>
           </li>
         </ol>
       </div>
@@ -128,18 +119,54 @@
           Tools I reach for when shipping reliable backend product work.
         </p>
         <ul class="skills__list">
-          <li class="skills__item reveal">Laravel</li>
-          <li class="skills__item reveal">PHP</li>
-          <li class="skills__item reveal">MySQL</li>
-          <li class="skills__item reveal">Redis</li>
-          <li class="skills__item reveal">Filament</li>
-          <li class="skills__item reveal">REST APIs</li>
-          <li class="skills__item reveal">Node.js</li>
-          <li class="skills__item reveal">Java</li>
-          <li class="skills__item reveal">AWS</li>
-          <li class="skills__item reveal">Tailwind CSS</li>
-          <li class="skills__item reveal">Livewire</li>
-          <li class="skills__item reveal">AI / LLMs</li>
+          <li class="skills__item reveal" style="--i: 0">
+            <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="" width="36" height="36" loading="lazy" />
+            <span>Laravel</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 1">
+            <img src="https://cdn.simpleicons.org/php/777BB4" alt="" width="36" height="36" loading="lazy" />
+            <span>PHP</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 2">
+            <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="" width="36" height="36" loading="lazy" />
+            <span>MySQL</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 3">
+            <img src="https://cdn.simpleicons.org/redis/DC382D" alt="" width="36" height="36" loading="lazy" />
+            <span>Redis</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 4">
+            <img src="https://cdn.simpleicons.org/livewire/FB70A9" alt="" width="36" height="36" loading="lazy" />
+            <span>Livewire</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 5">
+            <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" width="36" height="36" loading="lazy" />
+            <span>Node.js</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 6">
+            <img src="https://cdn.simpleicons.org/openjdk/437291" alt="" width="36" height="36" loading="lazy" />
+            <span>Java</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 7">
+            <img src="./images/skills/aws.svg" alt="" width="36" height="36" loading="lazy" />
+            <span>AWS</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 8">
+            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="" width="36" height="36" loading="lazy" />
+            <span>Tailwind</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 9">
+            <img src="https://cdn.simpleicons.org/docker/2496ED" alt="" width="36" height="36" loading="lazy" />
+            <span>Docker</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 10">
+            <img src="https://cdn.simpleicons.org/git/F05032" alt="" width="36" height="36" loading="lazy" />
+            <span>Git</span>
+          </li>
+          <li class="skills__item reveal" style="--i: 11">
+            <img src="./images/skills/openai.svg" alt="" width="36" height="36" loading="lazy" />
+            <span>AI / LLMs</span>
+          </li>
         </ul>
       </div>
     </section>
