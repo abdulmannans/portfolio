@@ -692,6 +692,32 @@ body:not(.user-is-tabbing) a:focus {
     letter-spacing: 0.02em;
 }
 
+.timeline__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 1rem;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--white-1);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+
+.tag--accent {
+    border-color: rgba(255, 50, 88, 0.45);
+    background: var(--pink-soft);
+    color: var(--white);
+}
+
 .timeline__copy {
     margin: 0;
     max-width: 64rem;
@@ -787,13 +813,16 @@ body:not(.user-is-tabbing) a:focus {
     border-top: 1px solid var(--line);
 }
 
-.projects__label {
-    margin: 0 0 1rem;
-    color: var(--pink);
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+.projects__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
+}
+
+.projects__feature h3 {
+    font-size: clamp(2.4rem, 2.8vw, 3.2rem);
+    margin-bottom: 1rem;
 }
 
 .projects__feature p {
@@ -806,10 +835,6 @@ body:not(.user-is-tabbing) a:focus {
     flex-wrap: wrap;
     gap: 1.6rem 2.4rem;
     margin-top: 0.4rem;
-}
-
-.projects__feature h3 {
-    font-size: clamp(2.4rem, 2.8vw, 3.2rem);
 }
 
 /* --------------------------------------- */
