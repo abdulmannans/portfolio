@@ -304,6 +304,43 @@ body:not(.user-is-tabbing) a:focus {
     background: rgba(255, 255, 255, 0.08);
 }
 
+.btn--whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    border-color: rgba(37, 211, 102, 0.55);
+    background: rgba(37, 211, 102, 0.08);
+}
+
+.btn--whatsapp::after {
+    background: rgba(37, 211, 102, 0.18);
+}
+
+.btn--whatsapp:hover {
+    color: var(--white);
+}
+
+.btn__icon {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    transition: transform 0.3s var(--ease);
+}
+
+.btn--whatsapp:hover .btn__icon {
+    transform: scale(1.08);
+}
+
+.btn__meta {
+    color: var(--muted);
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+.btn--whatsapp:hover .btn__meta {
+    color: var(--white-1);
+}
+
 .link__text {
     position: relative;
     display: inline-block;
@@ -730,27 +767,27 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Work ----- */
+/* ----- Projects ----- */
 /* --------------------------------------- */
 
-.work__grid {
+.projects__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--gutter-medium);
 }
 
 @media (max-width: 800px) {
-    .work__grid {
+    .projects__grid {
         grid-template-columns: 1fr;
     }
 }
 
-.work__feature {
+.projects__feature {
     padding: var(--gutter-normal) 0;
     border-top: 1px solid var(--line);
 }
 
-.work__label {
+.projects__label {
     margin: 0 0 1rem;
     color: var(--pink);
     font-family: var(--font-display);
@@ -759,9 +796,20 @@ body:not(.user-is-tabbing) a:focus {
     text-transform: uppercase;
 }
 
-.work__feature p {
+.projects__feature p {
     max-width: 48rem;
     color: var(--white-1);
+}
+
+.projects__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem 2.4rem;
+    margin-top: 0.4rem;
+}
+
+.projects__feature h3 {
+    font-size: clamp(2.4rem, 2.8vw, 3.2rem);
 }
 
 /* --------------------------------------- */
@@ -777,10 +825,18 @@ body:not(.user-is-tabbing) a:focus {
     flex-wrap: wrap;
     gap: 1.2rem;
     margin-top: 1rem;
+    align-items: center;
 }
 
 .contact__actions .btn {
     margin-top: 0;
+}
+
+@media (max-width: 500px) {
+    .contact__actions .btn--whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* --------------------------------------- */

@@ -19,7 +19,8 @@
         <li><a class="site-nav__link" href="#about" data-nav>About</a></li>
         <li><a class="site-nav__link" href="#experience" data-nav>Experience</a></li>
         <li><a class="site-nav__link" href="#skills" data-nav>Skills</a></li>
-        <li><a class="site-nav__link" href="#work" data-nav>Work</a></li>
+        <li><a class="site-nav__link" href="#projects" data-nav>Projects</a></li>
+        <li><a class="site-nav__link" href="#community" data-nav>Community</a></li>
         <li><a class="site-nav__link" href="#contact" data-nav>Contact</a></li>
       </ul>
     </div>
@@ -182,34 +183,120 @@
       </div>
     </section>
 
-    <section class="work" id="work">
+    <section class="projects" id="projects">
       <div class="row">
-        <h2 class="reveal">Selected Work</h2>
+        <h2 class="reveal">Projects</h2>
         <p class="section-lead reveal reveal--delay-1">
-          Open-source and product work that shows how I build.
+          Selected work from my GitHub.
         </p>
-        <div class="work__grid">
-          <article class="work__feature reveal">
-            <p class="work__label">Open Source</p>
-            <h3>SeedSpotter</h3>
+        <div class="projects__grid">
+          <article class="projects__feature reveal">
+            <p class="projects__label">Web</p>
+            <h3>Roulette Alias</h3>
             <p>
-              A Laravel package for database seeder verification — helping teams
-              catch missing or broken seeders before they hit production.
+              A lightweight name roulette — add aliases, spin, and pick a random
+              result. Built with HTML, CSS, and JavaScript.
             </p>
-            <a class="link__text" href="https://github.com/abdulmannans/seed-spotter" target="_blank"
-              rel="noopener noreferrer">View on GitHub <span aria-hidden="true">→</span></a>
+            <div class="projects__links">
+              <a class="link__text" href="https://github.com/abdulmannans/Roulette-Alias" target="_blank"
+                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+              <a class="link__text" href="https://abdulmannans.github.io/Roulette-Alias/" target="_blank"
+                rel="noopener noreferrer">Live demo <span aria-hidden="true">→</span></a>
+            </div>
           </article>
-          <article class="work__feature reveal reveal--delay-1">
-            <p class="work__label">Community</p>
-            <h3>Laravel Mumbai</h3>
+
+          <article class="projects__feature reveal reveal--delay-1">
+            <p class="projects__label">Web</p>
+            <h3>Portfolio</h3>
             <p>
-              Core team member. Initiated the Laravel Mumbai meetup and help
-              grow a local community around PHP and modern Laravel practices.
+              This site — a personal portfolio for experience, skills, projects,
+              and community work, built with HTML, CSS, and JavaScript.
             </p>
-            <a class="link__text" href="https://www.linkedin.com/in/abdulmannans/" target="_blank"
-              rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">→</span></a>
+            <div class="projects__links">
+              <a class="link__text" href="https://github.com/abdulmannans/portfolio" target="_blank"
+                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+              <a class="link__text" href="https://abdulmannans.netlify.app/" target="_blank"
+                rel="noopener noreferrer">Live site <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="projects__feature reveal">
+            <p class="projects__label">Java</p>
+            <h3>Expression Solver</h3>
+            <p>
+              A Java expression solver with validation and evaluation for
+              arithmetic expressions.
+            </p>
+            <div class="projects__links">
+              <a class="link__text" href="https://github.com/abdulmannans/expression-solver" target="_blank"
+                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="projects__feature reveal reveal--delay-1">
+            <p class="projects__label">Android</p>
+            <h3>VendorVocals</h3>
+            <p>
+              An Android vendor-side app with OTP auth, service management,
+              order tracking, and an admin panel for vendor verification.
+            </p>
+            <div class="projects__links">
+              <a class="link__text" href="https://github.com/abdulmannans/VendorVocals" target="_blank"
+                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="projects__feature reveal">
+            <p class="projects__label">Android</p>
+            <h3>Vocals</h3>
+            <p>
+              An Android client app for booking services — location, orders,
+              payments, and profile flows for end users.
+            </p>
+            <div class="projects__links">
+              <a class="link__text" href="https://github.com/abdulmannans/Vocals" target="_blank"
+                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="projects__feature reveal reveal--delay-1">
+            <p class="projects__label">Android</p>
+            <h3>Color Combination Picker</h3>
+            <p>
+              An Android color roulette app for experimenting with background
+              and text color combinations.
+            </p>
+            <div class="projects__links">
+              <a class="link__text" href="https://github.com/abdulmannans/Color-Combination-Picker" target="_blank"
+                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+            </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="row">
+        <h2 class="reveal">Community</h2>
+        <p class="section-lead reveal reveal--delay-1">
+          Volunteer work building local developer communities in Mumbai.
+        </p>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__role">Core Team Member</span>
+              <span class="timeline__company">Laravel Mumbai Community</span>
+              <span class="timeline__dates">Volunteer · Initiated the Mumbai meetup</span>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__role">Meetup Organizer</span>
+              <span class="timeline__company">JSLovers Mumbai</span>
+              <span class="timeline__dates">Volunteer · First Mumbai meetup</span>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -223,8 +310,12 @@
           </p>
           <div class="contact__actions">
             <a class="btn" href="mailto:samannan1999@gmail.com">samannan1999@gmail.com</a>
-            <a class="btn btn--ghost" href="https://wa.me/919004875711" target="_blank"
-              rel="noopener noreferrer">WhatsApp · +91 90048 75711</a>
+            <a class="btn btn--whatsapp" href="https://wa.me/919004875711" target="_blank"
+              rel="noopener noreferrer">
+              <img src="./images/whatsapp.svg" alt="" class="btn__icon" width="20" height="20" />
+              <span>WhatsApp</span>
+              <span class="btn__meta">+91 90048 75711</span>
+            </a>
           </div>
         </div>
       </div>
