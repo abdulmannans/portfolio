@@ -796,6 +796,57 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Projects ----- */
 /* --------------------------------------- */
 
+.case-study {
+    padding: var(--gutter-normal) 0 var(--gutter-medium);
+    border-top: 1px solid var(--line);
+    margin-bottom: var(--gutter-normal);
+}
+
+.case-study__lead {
+    max-width: 68rem;
+    font-size: 1.9rem;
+    color: var(--white-1);
+}
+
+.case-study__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--gutter-normal);
+    margin: var(--gutter-normal) 0;
+}
+
+.case-study__grid h4 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 0.8rem;
+}
+
+.case-study__grid p {
+    margin: 0;
+    max-width: none;
+    font-size: 1.6rem;
+    color: var(--white-1);
+}
+
+.case-study code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.92em;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.1em 0.35em;
+}
+
+@media (max-width: 800px) {
+    .case-study__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .projects__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -820,7 +871,8 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 1.2rem;
 }
 
-.projects__feature h3 {
+.projects__feature h3,
+.case-study h3 {
     font-size: clamp(2.4rem, 2.8vw, 3.2rem);
     margin-bottom: 1rem;
 }

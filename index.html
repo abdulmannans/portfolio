@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Abdul Mannan Siddiquei — Senior Software Engineer specializing in Laravel, PHP, and scalable backend systems. Based in Mumbai." />
+  <meta name="author" content="Abdul Mannan Siddiquei" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abdul Mannan Siddiquei" />
+  <meta property="og:title" content="Abdul Mannan Siddiquei | Senior Software Engineer" />
+  <meta property="og:description"
+    content="Laravel specialist building scalable backend systems for warehouse, commerce, and product teams." />
+  <meta property="og:url" content="https://abdulmannans.netlify.app/" />
+  <meta property="og:image" content="https://abdulmannans.netlify.app/images/og.png" />
+  <meta property="og:image:alt" content="Abdul Mannan Siddiquei — Senior Software Engineer" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abdul Mannan Siddiquei | Senior Software Engineer" />
+  <meta name="twitter:description"
+    content="Laravel specialist building scalable backend systems for warehouse, commerce, and product teams." />
+  <meta name="twitter:image" content="https://abdulmannans.netlify.app/images/og.png" />
+
+  <link rel="canonical" href="https://abdulmannans.netlify.app/" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
   <title>Abdul Mannan Siddiquei | Senior Software Engineer</title>
   <link rel="stylesheet" href="index.css" />
@@ -39,8 +59,8 @@
           commerce, and product teams — based in Mumbai.
         </p>
         <div class="header__actions reveal reveal--delay-3">
-          <a href="./files/ams_resume_2026.pdf" class="btn" download>Download Resume</a>
-          <a href="#experience" class="btn btn--ghost">View Experience</a>
+          <a href="#contact" class="btn">Get in touch</a>
+          <a href="./files/ams_resume_2026.pdf" class="btn btn--ghost" download>Download Resume</a>
         </div>
       </div>
     </div>
@@ -99,6 +119,7 @@
                 <span class="tag">Remote</span>
               </div>
             </div>
+            <p class="timeline__copy">18+ MVPs shipped · Filament &amp; LLMs · ~30% faster delivery cycles</p>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__meta">
@@ -110,6 +131,7 @@
                 <span class="tag tag--accent">On-site</span>
               </div>
             </div>
+            <p class="timeline__copy">Multi-tenant US commerce + BMC systems · 70% fewer prod issues · 10× faster exports</p>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__meta">
@@ -121,6 +143,7 @@
                 <span class="tag">Hybrid</span>
               </div>
             </div>
+            <p class="timeline__copy">Insurance platform · PII hardening · Laravel 5.8 → 9 upgrade</p>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__meta">
@@ -210,28 +233,57 @@
       <div class="row">
         <h2 class="reveal">Projects</h2>
         <p class="section-lead reveal reveal--delay-1">
-          Selected work from my GitHub.
+          Focused work that shows how I ship — open source first.
         </p>
+
+        <article class="case-study reveal">
+          <div class="projects__tags">
+            <span class="tag tag--accent">Open Source</span>
+            <span class="tag">Laravel Package</span>
+            <span class="tag">Case Study</span>
+          </div>
+          <h3>SeedSpotter</h3>
+          <p class="case-study__lead">
+            A Laravel package that compares seeder output with live database
+            content so teams catch missing, extra, or mismatched rows before
+            they reach production.
+          </p>
+          <div class="case-study__grid">
+            <div>
+              <h4>Problem</h4>
+              <p>
+                Seeders drift from real data over time. Teams discover broken
+                or incomplete seed data late — usually during demos, onboarding,
+                or failed deploys.
+              </p>
+            </div>
+            <div>
+              <h4>Approach</h4>
+              <p>
+                Built an Artisan-driven comparison that runs a seeder against a
+                table, diffs rows, and can ignore noisy columns. Configurable
+                through Laravel’s normal config flow and installable via Composer.
+              </p>
+            </div>
+            <div>
+              <h4>Result</h4>
+              <p>
+                Published on Packagist as
+                <code>abdulmannans/seed-spotter</code> — a reusable check for
+                data integrity in Laravel apps and Hacktoberfest-friendly open source.
+              </p>
+            </div>
+          </div>
+          <div class="projects__links">
+            <a class="link__text" href="https://github.com/abdulmannans/seed-spotter" target="_blank"
+              rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+            <a class="link__text" href="https://packagist.org/packages/abdulmannans/seed-spotter" target="_blank"
+              rel="noopener noreferrer">Packagist <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
         <div class="projects__grid">
           <article class="projects__feature reveal">
-            <div class="projects__tags">
-              <span class="tag tag--accent">Open Source</span>
-              <span class="tag">Laravel</span>
-            </div>
-            <h3>SeedSpotter</h3>
-            <p>
-              A Laravel package for database seeder verification — helping teams
-              catch missing or broken seeders before they hit production.
-            </p>
-            <div class="projects__links">
-              <a class="link__text" href="https://github.com/abdulmannans/seed-spotter" target="_blank"
-                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
-              <a class="link__text" href="https://packagist.org/packages/abdulmannans/seed-spotter" target="_blank"
-                rel="noopener noreferrer">Packagist <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <article class="projects__feature reveal reveal--delay-1">
             <div class="projects__tags">
               <span class="tag">Chrome Extension</span>
             </div>
@@ -246,80 +298,21 @@
             </div>
           </article>
 
-          <article class="projects__feature reveal">
-            <div class="projects__tags">
-              <span class="tag">Java</span>
-            </div>
-            <h3>Expression Solver</h3>
-            <p>
-              A Java expression solver with validation and evaluation for
-              arithmetic expressions.
-            </p>
-            <div class="projects__links">
-              <a class="link__text" href="https://github.com/abdulmannans/expression-solver" target="_blank"
-                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <article class="projects__feature reveal reveal--delay-1">
-            <div class="projects__tags">
-              <span class="tag">Web</span>
-            </div>
-            <h3>Roulette Alias</h3>
-            <p>
-              A lightweight name roulette — add aliases, spin, and pick a random
-              result. Built with HTML, CSS, and JavaScript.
-            </p>
-            <div class="projects__links">
-              <a class="link__text" href="https://github.com/abdulmannans/Roulette-Alias" target="_blank"
-                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
-              <a class="link__text" href="https://abdulmannans.github.io/Roulette-Alias/" target="_blank"
-                rel="noopener noreferrer">Live demo <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <article class="projects__feature reveal">
-            <div class="projects__tags">
-              <span class="tag">Android</span>
-            </div>
-            <h3>VendorVocals</h3>
-            <p>
-              An Android vendor-side app with OTP auth, service management,
-              order tracking, and an admin panel for vendor verification.
-            </p>
-            <div class="projects__links">
-              <a class="link__text" href="https://github.com/abdulmannans/VendorVocals" target="_blank"
-                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
           <article class="projects__feature reveal reveal--delay-1">
             <div class="projects__tags">
               <span class="tag">Android</span>
+              <span class="tag">Product Pair</span>
             </div>
-            <h3>Vocals</h3>
+            <h3>Vocals &amp; VendorVocals</h3>
             <p>
-              An Android client app for booking services — location, orders,
-              payments, and profile flows for end users.
+              A two-sided Android service marketplace — client booking (Vocals)
+              and vendor/admin ops (VendorVocals) with OTP auth, orders, and payments.
             </p>
             <div class="projects__links">
               <a class="link__text" href="https://github.com/abdulmannans/Vocals" target="_blank"
-                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
-            </div>
-          </article>
-
-          <article class="projects__feature reveal">
-            <div class="projects__tags">
-              <span class="tag">Android</span>
-            </div>
-            <h3>Color Combination Picker</h3>
-            <p>
-              An Android color roulette app for experimenting with background
-              and text color combinations.
-            </p>
-            <div class="projects__links">
-              <a class="link__text" href="https://github.com/abdulmannans/Color-Combination-Picker" target="_blank"
-                rel="noopener noreferrer">GitHub <span aria-hidden="true">→</span></a>
+                rel="noopener noreferrer">Vocals <span aria-hidden="true">→</span></a>
+              <a class="link__text" href="https://github.com/abdulmannans/VendorVocals" target="_blank"
+                rel="noopener noreferrer">VendorVocals <span aria-hidden="true">→</span></a>
             </div>
           </article>
         </div>
