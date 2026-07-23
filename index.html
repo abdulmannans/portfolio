@@ -4,86 +4,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Abdul Mannan Siddiquei — Senior Software Engineer specializing in Laravel, PHP, and scalable backend systems. Based in Mumbai." />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-  <title>
-    Abdul Mannan Siddiquei | A Software Developer.
-  </title>
-
+  <title>Abdul Mannan Siddiquei | Senior Software Engineer</title>
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-
-
   <header class="header" role="banner" id="top">
-    <div class="row">
-    </div>
+    <div class="header__atmosphere" aria-hidden="true"></div>
+    <nav class="nav row" aria-label="Primary">
+      <a class="nav__brand" href="#top">AMS</a>
+      <ul class="nav__items">
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#experience">Experience</a></li>
+        <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+        <li class="nav__item"><a class="nav__link" href="#work">Work</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
+        <p class="header__eyebrow reveal">Senior Software Engineer</p>
+        <h1 class="heading-primary reveal reveal--delay-1">
           <span>Abdul Mannan Siddiquei</span>
         </h1>
-        <p>A Software Developer based in Mumbai, India.</p>
+        <p class="header__lead reveal reveal--delay-2">
+          Laravel specialist building scalable backend systems for warehouse,
+          commerce, and product teams — based in Mumbai, shipping to Europe.
+        </p>
+        <div class="header__actions reveal reveal--delay-3">
+          <a href="./files/ams_resume_2026.pdf" class="btn" download>Download Resume</a>
+          <a href="#experience" class="btn btn--ghost">View Experience</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main role="main">
-
-
     <section class="about" id="about">
       <div class="row">
-        <h2>About Me</h2>
+        <h2 class="reveal">About Me</h2>
         <div class="about__content">
-          <div class="about__text">
+          <div class="about__text reveal reveal--delay-1">
             <p>
-              I am a software developer who is adaptable and works well in a team. I thrive in environments that encourage teamwork and value open communication. I love learning and I am always looking for ways to improve my skills. I am great at brainstorming and delivering projects. I believe that teamwork and open communication are essential for success. I value my teammates' opinions and perspectives and think that they are crucial to the innovation process. I am also part of the Laravel Mumbai Community. When I am not coding, I enjoy swimming, cooking, and trying different foods.
+              I'm a Senior Software Engineer at Lyra WMS, a Netherlands-based
+              warehouse management platform. I specialize in Laravel, PHP, and
+              MySQL, with hands-on experience across Redis, Filament, AWS, and
+              AI-assisted development. I care about clean architecture, fast
+              delivery, and systems that stay maintainable under real load.
             </p>
-
-            <a href="/files/ams_resume_2025.pdf" class="btn" download>My Resume</a>
+            <p>
+              Previously I led backend work across MVPs, multi-tenant commerce
+              platforms, and civic tech — including work for Asia's largest
+              municipal body. I'm a core team member of the Laravel Mumbai
+              Community. Outside of code, I swim, cook, and chase good food.
+            </p>
+            <a href="./files/ams_resume_2026.pdf" class="btn" download>My Resume</a>
           </div>
-
-          <div class="about__photo-container">
-    
-            <img class="about__photo" src="./images/ams.jpg" alt="" />
+          <div class="about__photo-container reveal reveal--delay-2">
+            <img class="about__photo" src="./images/ams.jpg" alt="Portrait of Abdul Mannan Siddiquei" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="row">
+        <h2 class="reveal">Experience</h2>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__role">Senior Software Engineer</span>
+              <span class="timeline__company">Lyra WMS</span>
+              <span class="timeline__dates">Mar 2025 — Present · Mumbai / Groningen</span>
+            </div>
+            <p class="timeline__copy">
+              Building and optimizing core systems for a European warehouse
+              management platform — fulfillment, inventory, order flow, and
+              automation on a Laravel stack.
+            </p>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__role">Senior Backend Developer</span>
+              <span class="timeline__company">Joistic Technologies</span>
+              <span class="timeline__dates">Mar 2024 — Feb 2025 · Mumbai</span>
+            </div>
+            <p class="timeline__copy">
+              Delivered 18+ MVP projects (8 from scratch), shipped internal
+              products with Filament, integrated LLMs, and cut development
+              cycles by ~30% with the TALL stack and Redis.
+            </p>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__role">Sr. Software Solution Engineer</span>
+              <span class="timeline__company">edge CRM</span>
+              <span class="timeline__dates">Dec 2022 — Mar 2024 · Mumbai</span>
+            </div>
+            <p class="timeline__copy">
+              Led backend for a multi-tenant US food-delivery platform and
+              civic projects for BMC — including an offline ticketing system,
+              10× faster exports, and 70% fewer production issues.
+            </p>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__meta">
+              <span class="timeline__role">Software Engineer</span>
+              <span class="timeline__company">Big Rattle Technologies</span>
+              <span class="timeline__dates">Oct 2021 — Dec 2022 · Mumbai</span>
+            </div>
+            <p class="timeline__copy">
+              Built insurance workflows, secured PII data, and upgraded a
+              production app from Laravel 5.8 to Laravel 9 for speed and security.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="row">
+        <h2 class="reveal">Skills</h2>
+        <p class="section-lead reveal reveal--delay-1">
+          Tools I reach for when shipping reliable backend product work.
+        </p>
+        <ul class="skills__list">
+          <li class="skills__item reveal">Laravel</li>
+          <li class="skills__item reveal">PHP</li>
+          <li class="skills__item reveal">MySQL</li>
+          <li class="skills__item reveal">Redis</li>
+          <li class="skills__item reveal">Filament</li>
+          <li class="skills__item reveal">REST APIs</li>
+          <li class="skills__item reveal">Node.js</li>
+          <li class="skills__item reveal">Java</li>
+          <li class="skills__item reveal">AWS</li>
+          <li class="skills__item reveal">Tailwind CSS</li>
+          <li class="skills__item reveal">Livewire</li>
+          <li class="skills__item reveal">AI / LLMs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2 class="reveal">Selected Work</h2>
+        <p class="section-lead reveal reveal--delay-1">
+          Open-source and product work that shows how I build.
+        </p>
+        <div class="work__grid">
+          <article class="work__feature reveal">
+            <p class="work__label">Open Source</p>
+            <h3>SeedSpotter</h3>
+            <p>
+              A Laravel package for database seeder verification — helping teams
+              catch missing or broken seeders before they hit production.
+            </p>
+            <a class="link__text" href="https://github.com/abdulmannans/seed-spotter" target="_blank"
+              rel="noopener noreferrer">View on GitHub <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="work__feature reveal reveal--delay-1">
+            <p class="work__label">Community</p>
+            <h3>Laravel Mumbai</h3>
+            <p>
+              Core team member. Initiated the Laravel Mumbai meetup and help
+              grow a local community around PHP and modern Laravel practices.
+            </p>
+            <a class="link__text" href="https://www.linkedin.com/in/abdulmannans/" target="_blank"
+              rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2 class="reveal">Let's talk</h2>
+        <div class="contact__info reveal reveal--delay-1">
+          <p>
+            Open to thoughtful collaborations, Laravel/backend roles, and
+            community conversations. Reach me anytime.
+          </p>
+          <a class="btn" href="mailto:samannan1999@gmail.com">samannan1999@gmail.com</a>
         </div>
       </div>
     </section>
   </main>
 
-
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/SiddiqueiAbdul/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          <a href="https://twitter.com/SiddiqueiAbdul/" title="Twitter profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter" />
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://github.com/abdulmannans/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          <a href="https://github.com/abdulmannans/" title="GitHub profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="GitHub" />
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/abdulmannans/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="https://www.linkedin.com/in/abdulmannans/" title="LinkedIn profile">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn" />
           </a>
         </li>
       </ul>
-
-      <p>
-        &copy; 2024
-      </p>
+      <p>&copy; <span id="year">2026</span> Abdul Mannan Siddiquei</p>
     </div>
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
   <script src="./index.js"></script>
 </body>
